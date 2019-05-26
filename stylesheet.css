@@ -144,7 +144,7 @@ hr {
    color: #fff;
    border-radius: 100%;
 }
-.scrolldown a:hover { color: orange; }
+.scrolldown a:hover { color: #F06000; }
 
 /* ABOUT */
 
@@ -171,13 +171,13 @@ hr {
 /* Title */
 
 #title {
-	text-align: center;	
+	text-align: center;
 	padding-top: 2%;
+	color: #F06000; /* Orange */
 }
 
-h3 {
+#title h3 {
 	font: 1.5em 'opensans-bold', sans-serif;
-	color: white;
 }
 
 /* Quote */
@@ -200,7 +200,7 @@ h3 {
 }
 
 .text p {
-	font: 1.1em 'opensans-bold', sans-serif;
+	font: 1.3em 'opensans-bold', sans-serif;
 	color: white;
 }
 
@@ -225,4 +225,87 @@ h3 {
 	padding-bottom: 6%;
 }
 
+/* RESUME */
 
+#resume {
+	width: 100%;
+	background-color: white;
+}
+
+#education {
+	padding-top: 6%;
+	padding-left: 10%;
+}
+
+#titleCV {
+	color: black; /* Dark mauve */
+}
+
+#titleCV h3 {
+	font: 1.5em 'opensans-bold', sans-serif;
+}
+
+.prepend {
+	display: inline-block;
+}
+
+.append {
+	display: inline-block;
+}
+
+.place p {
+	font: 1.3em 'opensans-bold', sans-serif;
+	color: #666666;
+}
+
+.details p {
+	font: 1.3em 'opensans-bold', sans-serif;
+	color: #666666;
+}
+
+.details {
+	padding-right: 20%;
+	padding-top: 10px;
+	padding-bottom: 30px;
+}
+
+#experience {
+	padding-top: 15px;
+	padding-left: 10%;
+}
+
+#skills {
+	padding-top: 15px;
+	padding-left: 10%;
+}
+
+/* Skillbars */
+
+* {box-sizing:border-box}
+
+.containerSkill {
+  width: 100%; 
+  background-color: #ddd; /* Grey */
+}
+
+.skill {
+  text-align: right;
+  padding: 10px;
+  color: white;
+}
+
+.html {width: 90%; background-color: #3D9970;} 
+.css {width: 90%; background-color: #3D9970;}
+.javascript {width: 50%; background-color: #3D9970;}
+.php {width: 50%; background-color: #3D9970;}
+.git {width: 50%; background-color: #3D9970;}
+.office {width: 90%; background-color: #7FDBFF;} 
+.google {width: 90%; background-color: #7FDBFF;}
+.indesign {width: 90%; background-color: #7FDBFF;}
+.illustrator {width: 60%; background-color: #7FDBFF;}
+.vegas {width: 80%; background-color: #7FDBFF;}
+.premiere {width: 70%; background-color: #7FDBFF;}
+.french {width: 100%; background-color: #FF4136 ;}
+.english {width: 95%; background-color: #FF4136 ;}
+.spanish {width: 70%; background-color: #FF4136 ;}
+.dutch {width: 40%; background-color: #FF4136 ;}

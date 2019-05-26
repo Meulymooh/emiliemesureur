@@ -16,11 +16,12 @@ Bootstrap, fontawesome
 
 ## Achieved
 
-Navbar, intro, about
+Navbar, intro, about, resume
 
 ## To be completed
 
-* Resume, portfolio, contact.
+* Animate the skillbars?
+* Portfolio, contact.
 * Parallax between sections.
 * CSS or Javascript animation in the intro.
 * Dividing CSS file into several files for reuse.
