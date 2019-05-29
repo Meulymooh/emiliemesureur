@@ -7,24 +7,22 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<!-- Jquery js -->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-
-	<!--Bootstrap--> 	
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
 	<!--Ajax--> 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
 	<!--My CSS--> 	
 	<link href="stylesheet.css" rel="stylesheet" type="text/css">
-
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 	<!--Fonts-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+  integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <!-- Fontawesome -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 	<!--Other-->
 	<title>Emilie Mesureur</title>
 
@@ -34,19 +32,30 @@
 
 
   <!-- Navbar -->
-  <nav class="container" id="nav-wrap">
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul id="nav" class="nav">
-        <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
-        <li><a class="smoothscroll" href="#about">About</a></li>
-        <li><a class="smoothscroll" href="#resume">Resume</a></li>
-        <li><a class="smoothscroll" href="#portfolio">Portfolio</a></li>
-        <li><a class="smoothscroll" href="#contact">Contact</a></li>
-      </ul> 
-    </div><!-- Navbar collapse -->
 
-  </nav><!-- End of navbar -->
+<div class="navbar navbar-inverse navbar-fixed-top opaque-navbar">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navMain">
+  <span class="glyphicon glyphicon-chevron-right" style="color:white;"></span>
+    
+  </button>
+      <a class="navbar-brand pull-left" href="index.html"><b>EM</b></a>
+    </div>
+    <div class="collapse navbar-collapse" id="navMain">
+      <ul class="nav navbar-nav pull-right">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
     
 
   <!-- Introduction -->
@@ -100,7 +109,7 @@
     </div>
 
     <div class="row row-cv">
-       <a href="http://emilie.watlock.be/CV_Emilie.pdf" class="btn"><i class="fa fa-download"></i>  Download CV</a>
+       <a target="_blank" href="http://emilie.watlock.be/CV_Emilie.pdf" class="btn"><i class="fa fa-download"></i>  Download CV</a>
     </div>
 
   </section>
@@ -121,11 +130,11 @@
           <span class="append"><h3><strong>Education</strong></h3></span>
         </div>
         <div class="col col-sm-9 description">
-          <div class="row title"><h3>Training in Web Development</h3>
+          <div class="row title"><h3>Training in Web Development (ongoing)</h3>
           </div>
-          <div class="row place"><p><i>BeCode, Ghent (Belgium)</i> - 2019</p>
+          <div class="row years"><p><i>BeCode, Ghent (Belgium)</i> - 2019</p>
           </div>
-          <div class="row details"><p>BeCode helps highly motivated and independent people become junior web developers within 6 months. It is based on the Simplon method stressing the benefit of "learning to learn" so as to avoid being stuck in the future when confronted with other digital languages. The program first covers the basics of front-end and back-end development before the students choose their own specialization. </p>
+          <div class="row details"><p>Intensive 7-month training based on the Simplon method. It covers front-end and back-end over 5 months, followed by 2 months of specialization.</p>
           </div>
         </div>
 
@@ -134,20 +143,20 @@
         <div class="col col-sm-9 description">
           <div class="row title"><h3>Master in Translation and International Relations</h3>
           </div>
-          <div class="row place"><p><i>ISTI, Brussels (Belgium)</i> - 2005</p>
+          <div class="row years"><p><i>ISTI, Brussels (Belgium)</i> - 2005</p>
           </div>
-          <div class="row details"><p>Formerly an independent school, ISTI is now the Translation and Intepretation department of the Free University of Brussels. During my master, I worked on two main projects: a research and translation thesis about corruption in the US institutions, and a research work about the importance of the French language within the organization "Canadian Parents for French".</p>
+          <div class="row details"><p>Translation curriculum focusing on European and International institutions. I worked on two projects: a research and translation thesis about corruption in the US institutions, and a research work about the importance of the French language within the organization "Canadian Parents for French".</p>
           </div>
         </div>
 
       <div class="col col-sm-3 titleCV">
       </div>
         <div class="col col-sm-9 description">
-          <div class="row title"><h3>Bachelor in English and American studies</h3>
+          <div class="row title"><h3>Bachelor in English and American Studies</h3>
           </div>
-          <div class="row place"><p><i>Paris X University, Nanterre (France)</i> - 2002</p>
+          <div class="row years"><p><i>Paris X University, Nanterre (France)</i> - 2002</p>
           </div>
-          <div class="row details"><p>I majored in American literature and history. The curriculum covered the following subjects: grammar, phonetics, British and American literature, British and American history, translation. </p>
+          <div class="row details"><p>I majored in American literature and history.</p>
           </div>
         </div>
 
@@ -165,32 +174,21 @@
         <div class="col col-sm-9 description">
           <div class="row title"><h3>Content Writer</h3>
           </div>
-          <div class="row place"><p><i>Boulanger Group, Villeneuve d'Ascq (France)</i> - 2013-2018</p>
+          <div class="row years"><p><i>6 years of experience</i></p>
           </div>
           <div class="row details">
-            <p>Technical documentation (user manuals, quick guides, safety instructions), user-oriented materials (recipe books, educational leaflets for at-home training), newsletter (FR and ENG), proofreading. Volunteering as an in-house staff trainer for the implementation of Office 365 and Google Apps.
+            <p>Technical documentation (user manuals, quick guides, safety instructions), user-oriented materials (recipe books, educational leaflets for at-home training), newsletter (FR and ENG), proofreading.
           </div>
         </div>
 
       <div class="col col-sm-3 titleCV">
       </div>
         <div class="col col-sm-9 description">
-          <div class="row title"><h3>Technical Translator</h3>
+          <div class="row title"><h3> Translator</h3>
           </div>
-          <div class="row place"><p><i>CNRS, Villeneuve d'Ascq (France)</i> - 2010-2012</p>
+          <div class="row years"><p><i>13 year of experience</i></p>
           </div>
-          <div class="row details"><p>Translating and proofreading technical articles written by PhD students, post-doc researchers and professors in the Computer Science Department. Administrative and language support to foreign students.</p>
-          </div>
-        </div>
-
-      <div class="col col-sm-3 titleCV">
-      </div>
-        <div class="col col-sm-9 description">
-          <div class="row title"><h3>Translator</h3>
-          </div>
-          <div class="row place"><p><i>ADPI, Orly (France)</i> - 2008-2010</p>
-          </div>
-          <div class="row details"><p>Technical translations: airport infrastructures, civil engineering, architecture. Legal translations: subcontracts, HR documents. General translations: website, brochures, letters, communication documents. Creation of a terminology database. </p>
+          <div class="row details"><p>Translation and proofreading of technical documentation specialized in airport and civil engineering, and in computer science. Legal translation (contrats and HR documents). General translation (communication, website, brochures, letters...). Creation and management of a terminology database.</p>
           </div>
         </div>
 
@@ -199,20 +197,9 @@
         <div class="col col-sm-9 description">
           <div class="row title"><h3>French Teacher</h3>
           </div>
-          <div class="row place"><p><i>Lady Eleanor Holles School, Hampton (UK)</i> - 2006-2008</p>
+          <div class="row years"><p><i>2 years of experience</i></p>
           </div>
-          <div class="row details"><p>Teaching French to high school students and preparing them for the GCSE and A-Level exams. Animating the French Club and organizing language-related events (EuropeanDay of Languages, film screenings, etc.). </p>
-          </div>
-        </div>
-
-      <div class="col col-sm-3 titleCV">
-      </div>
-        <div class="col col-sm-9 description">
-          <div class="row title"><h3>Translation Project Manager</h3>
-          </div>
-          <div class="row place"><p><i>Translations, Paris (France)</i> - 2006</p>
-          </div>
-          <div class="row details"><p>Processing translation requests and sending quotes (financial and legalsectors). Selecting translators based on their fields of expertise. Proofreading. </p>
+          <div class="row details"><p>(In the UK) Teaching French to high school students and preparing them for the GCSE and A-Level exams. Animating the French Club and organizing language-related events (EuropeanDay of Languages, film screenings, etc.). </p>
           </div>
         </div>
 
@@ -220,7 +207,7 @@
     </div><!-- End of row -->
 
     <!-- Skills-->
-    <div class="row">
+    <div class="row" id="rowSkills">
       <div id="skills">
 
         <div class="col col-sm-3 titleCV">
@@ -363,11 +350,216 @@
       </div><!-- End of language skills -->
 
 
-      </div><!-- End of all skills -->
+</div><!-- End of all skills -->
 
     </div><!-- End of row -->   
 
   </section>
+
+  <section class="container" id="portfolio">
+
+    <div class="row">
+      <div id="titlePortfolio">
+        <h3><strong>My BeCode Portfolio</strong></h3>
+        <p>Click on the picture to open the website</p>
+      </div>
+    </div>
+
+    <!-- Carousel -->
+    <div class="container--head">
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="7"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="8"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="9"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="10"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="11"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="12"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="13"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <a href="https://meulymooh.github.io/VCard/index.html" target="_blank">
+              <img src="img/vcard.jpg" alt="image0" style="width:100%">
+            </a>
+            <div class="carousel-caption">
+              <h3>My vCard</h3> HTML semantics, CSS positioning.
+            </div>
+          </div>
+          <div class="item">
+            <a href="https://meulymooh.github.io/404-page/index.html" target="_blank">
+              <img src="img/deadend.jpg" alt="image1" style="width:100%">
+            </a>
+            <div class="carousel-caption">
+              <h3>Error 404</h3> HTML semantics, CSS positioning.
+            </div>
+          </div>
+          <div class="item">
+            <a href="https://meulymooh.github.io/My-CV/index.html" target="_blank">
+              <img src="img/luggage.jpg" alt="image2" style="width:100%">
+            </a>
+            <div class="carousel-caption">
+              <h3>My CV</h3> Grids, bootstrap, layout.
+            </div>
+          </div>
+          <div class="item">
+            <a href="https://meulymooh.github.io/Frameworking-FTW/index.html" target="_blank">
+              <img src="img/layout.jpg" alt="image3" style="width:100%">
+            </a>
+            <div class="carousel-caption">
+              <h3>Layout</h3> Frameworks.
+            </div>
+          </div>
+          <div class="item">
+            <a href="https://meulymooh.github.io/suzanne-collins/index.html" target="_blank">
+              <img src="img/redline.jpg" alt="image4" style="width:100%">
+            </a>
+            <div class="carousel-caption">
+              <h3>Red Line Project</h3> Redesigning a website.
+            </div>
+          </div>
+          <div class="item">
+            <a href="https://drive.google.com/file/d/1_RwQ7mwWhzxL8pP_4QeQ1mdY-5DSOcfL/view" target="_blank">
+              <img src="img/start.jpg" alt="image5" style="width:100%">
+            </a>
+            <div class="carousel-caption">
+              <h3>Start Kit</h3> Oral presentation.
+            </div>
+          </div>
+          <div class="item">
+            <a href="https://anton90.github.io/Main-MarioLuigi/main.html" target="_blank">
+              <img src="img/group.jpg" alt="image6" style="width:100%">
+            </a>
+            <div class="carousel-caption">
+              <h3>One-Page Website</h3> Group project.
+            </div>
+          </div>
+          <div class="item">
+            <a href="https://meulymooh.github.io/nyan/index.html" target="_blank">
+              <img src="img/cat.jpg" alt="image7" style="width:100%">
+            </a>
+            <div class="carousel-caption">
+              <h3>Nyan Cat</h3> Starting with Javascript.
+            </div>
+          </div>
+          <div class="item">
+            <a href="https://meulymooh.github.io/serious-business/index.html" target="_blank">
+              <img src="img/business.jpg" alt="image8" style="width:100%">
+            </a>
+            <div class="carousel-caption">
+              <h3>Serious Business</h3> Javascript "if" statements.
+            </div>
+          </div>
+          <div class="item">
+            <a href="https://meulymooh.github.io/nyan/index.html" target="_blank">
+              <img src="img/tools.jpg" alt="image9" style="width:100%">
+            </a>
+            <div class="carousel-caption">
+              <h3>Fix Me!</h3> DOM manipulation.
+            </div>
+          </div>
+          <div class="item">
+            <a href="https://meulymooh.github.io/serious-business/index.html" target="_blank">
+              <img src="img/shopping.jpg" alt="image10" style="width:100%">
+            </a>
+            <div class="carousel-caption">
+              <h3>The Shopping List</h3> Javascript level assessment.
+            </div>
+          </div>
+          <div class="item">
+            <a href="https://meulymooh.github.io/dynamic-loading/index.html" target="_blank">
+              <img src="img/jenga.jpg" alt="image11" style="width:100%">
+            </a>
+            <div class="carousel-caption">
+              <h3>Dynamic Loading</h3> Learning Ajax.
+            </div>
+          </div>
+          <div class="item">
+            <a href="https://drive.google.com/file/d/15afRLm9p8eElEqmCbmPEhIxPemLb1Bm-/view" target="_blank">
+              <img src="img/hacker.jpg" alt="image12" style="width:100%">
+            </a>
+            <div class="carousel-caption">
+              <h3>Cross-Site Scripting</h3> Oral presentation.
+            </div>
+          </div>
+          <div class="item">
+            <a href="https://meulymooh.github.io/pokedex/index.html" target="_blank">
+              <img src="img/pokemon.jpg" alt="image13" style="width:100%">
+            </a>
+            <div class="carousel-caption">
+              <h3>Pokedex</h3> Talking to external API.
+            </div>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+      </div>
+    </div>
+      <!-- End of carousel -->
+      
+    </div><!-- End of row -->
+
+  </section>
+
+
+
+
+<script>
+
+  // Toggle tranparent navbar when the user scrolls the page
+
+  $(window).scroll(function() {
+    if($(this).scrollTop() > 50)  /*height in pixels when the navbar becomes non opaque*/ 
+    {
+        $('.opaque-navbar').addClass('opaque');
+    } else {
+        $('.opaque-navbar').removeClass('opaque');
+    }
+});
+
+  // Carousel
+  $(function() {
+    $('.tooltip-carousel').popover();
+
+    $('#carousel-example-generic').on('slide.bs.carousel', function() {
+      $('.tooltip-carousel').popover('hide');
+      $(this).find('.caraousel-tooltip-item.active').fadeOut(function() {
+        $(this).removeClass('active');
+      });
+    });
+
+    $('#carousel-example-generic').on('slid.bs.carousel', function() {
+      var index = $(this).find('.carousel-inner > .item.active').index();
+      $(this).find('.caraousel-tooltip-item').eq(index).fadeIn(function() {
+        $(this).addClass('active');
+      });
+    });
+
+    $('.tooltip-carousel').mouseenter(function() {
+      $(this).popover('show');
+    }).mouseleave(function() {
+      $(this).popover('hide');
+    });
+  });
+</script>
+
 
 </body>
 </html>
