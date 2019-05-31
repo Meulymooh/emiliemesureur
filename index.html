@@ -11,17 +11,16 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<!--My CSS--> 	
 	<link href="stylesheet.css" rel="stylesheet" type="text/css">
-  <!-- Bootstrap CSS -->
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
-  <!-- jQuery -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  	<!-- Bootstrap CSS -->
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  	<!-- jQuery -->
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  	<!-- Compiled plugins -->
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 	<!--Fonts-->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-  integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-  <!-- Fontawesome -->
+  	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  	<!-- Fontawesome -->
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 	<!--Other-->
 	<title>Emilie Mesureur</title>
@@ -30,18 +29,17 @@
 
 <body>
 
-
+<section id="home">
   <!-- Navbar -->
 
-
 <div class="navbar navbar-inverse navbar-fixed-top opaque-navbar">
-  <div class="wrapper">
+  <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navMain">
   <span class="glyphicon glyphicon-chevron-right" style="color:white;"></span>
     
   </button>
-      <div><a class="navbar-brand pull-left" id="brand" href="index.html"><b>EM</b></a></div>
+      <a class="navbar-brand" href="index.html">EMILIE MESUREUR</a>
     </div>
     <div class="collapse navbar-collapse" id="navMain">
       <ul class="nav navbar-nav pull-right">
@@ -56,25 +54,26 @@
 </div>
 
 
+
     
 
   <!-- Introduction -->
 
  
 
-    <section id="introduction">
+
 
       <h1>Emilie Mesureur</h1><br/>
       <h2>FRONT-END DEVELOPER | CONTENT WRITER</h2>
       <br/>
       <hr> 
       <br/>
-      <ul class="social">
+      <ul class="social-1">
           <li><a target="_blank" href="https://www.linkedin.com/in/emilie-mesureur-b0a91523/"><i class="fab fa-linkedin-in fa-2x" style="color:white"></i></a></li>
           <li><a target="_blank" href="https://github.com/Meulymooh"><i class="fab fa-github fa-2x" style="color:white"></i></a></li>
           <li><a target="_blank" href="https://www.instagram.com/belgianemilie/"><i class="fab fa-instagram fa-2x" style="color:white"></i></a></li>
           <li><a target="_blank" href="mesureur.e@gmail.com"><i class="far fa-envelope fa-2x" style="color:white"></i></a></li>
-            </ul>
+      </ul>
       <p class="scrolldown">
          <a class="arrowDown" href="#about"><i class="fas fa-chevron-circle-down"></i></a>
       </p>
@@ -85,7 +84,7 @@
 
   <!-- About -->
 
-  <section class="container navy" id="about">
+  <section class="wrapper navy" id="about">
 
     <div class="row">
       <div id="picture">
@@ -121,7 +120,7 @@
 
   <!-- Resume -->
 
-  <section class="container" id="resume">
+  <section class="wrapper" id="resume">
     <!-- Resume -->
     <div class="row">
 
@@ -378,7 +377,7 @@
 
   </section>
 
-  <section class="container" id="portfolio">
+  <section class="wrapper" id="portfolio">
 
     <div class="row">
 
@@ -542,7 +541,7 @@
 
   </section>
 
-  <section class="container" id="contact">
+  <section class="wrapper" id="contact">
 
 	<div class="row title">
        <h3>CONTACT ME</h3><br/>
@@ -553,7 +552,7 @@
       <div class="col col-sm-6">
       	<div class="contactDetails">
       		<div class="row" id="contactTitle">
-      			<h4><b>Get in touch</b></h4><br/>
+      			<h4><b>Contact details</b></h4><br/>
       		</div>
       		<div class="row text">
       			<p><b>Address: </b>Maaltebruggestraat 66, 9000 Gent (Belgium)</p>
@@ -592,13 +591,37 @@
 
   </section>
 
+  <footer class="wrapperSmaller" id="footer">
+  	<div class="row">
+
+  		<div class="col col-sm-4 my-auto text">
+			<p>© 2019 Emilie Mesureur</p>
+  		</div>
+
+  		<div class="col col-sm-4 my-auto text">
+  			      
+  			<ul class="social-2">
+          		<li><a target="_blank" href="https://www.linkedin.com/in/emilie-mesureur-b0a91523/"><i class="fab fa-linkedin-in fa-1x" style="color:#cccccc"></i></a></li>
+          		<li><a target="_blank" href="https://github.com/Meulymooh"><i class="fab fa-github fa-1x" style="color:#cccccc"></i></a></li>
+          		<li><a target="_blank" href="https://www.instagram.com/belgianemilie/"><i class="fab fa-instagram fa-1x" style="color:#cccccc"></i></a></li>
+          		<li><a target="_blank" href="mesureur.e@gmail.com"><i class="far fa-envelope fa-1x" style="color:#cccccc"></i></a></li>
+      		</ul>
+
+  		</div>
+
+  		<div class="col col-sm-4 my-auto col-centered text" id="scrollup">
+  			<a class="arrowUp" href="#home"><i class="fas fa-chevron-circle-up"></i></a>
+  		</div>
+
+  	</div>
+  </footer>
+
 
 
 
 <script>
 
-  // Toggle tranparent navbar when the user scrolls the page
-
+  //Navbar
   $(window).scroll(function() {
     if($(this).scrollTop() > 50)  /*height in pixels when the navbar becomes non opaque*/ 
     {
