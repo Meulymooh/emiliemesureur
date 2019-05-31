@@ -35,13 +35,13 @@
 
 
 <div class="navbar navbar-inverse navbar-fixed-top opaque-navbar">
-  <div class="container">
+  <div class="wrapper">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navMain">
   <span class="glyphicon glyphicon-chevron-right" style="color:white;"></span>
     
   </button>
-      <a class="navbar-brand pull-left" href="index.html"><b>EM</b></a>
+      <div><a class="navbar-brand pull-left" id="brand" href="index.html"><b>EM</b></a></div>
     </div>
     <div class="collapse navbar-collapse" id="navMain">
       <ul class="nav navbar-nav pull-right">
@@ -60,10 +60,12 @@
 
   <!-- Introduction -->
 
-  <header class="container" id="home">
-    <section id="introduction-text">
-      <h1><strong>Emilie Mesureur</strong></h1><br/>
-      <h3><strong>FRONT-END DEVELOPER | CONTENT WRITER</strong></h3>
+ 
+
+    <section id="introduction">
+
+      <h1>Emilie Mesureur</h1><br/>
+      <h2>FRONT-END DEVELOPER | CONTENT WRITER</h2>
       <br/>
       <hr> 
       <br/>
@@ -76,13 +78,14 @@
       <p class="scrolldown">
          <a class="arrowDown" href="#about"><i class="fas fa-chevron-circle-down"></i></a>
       </p>
-  </header>
+
+  </section>
 
   <!-- End of introduction -->
 
   <!-- About -->
 
-  <section class="container" id="about">
+  <section class="container navy" id="about">
 
     <div class="row">
       <div id="picture">
@@ -91,24 +94,24 @@
     </div>
 
     <div class="row">
-      <div id="title">
-        <h3><strong>About me</strong></h3>
+      <div class="title">
+        <h3>ABOUT ME</h3>
       </div>
     </div>
 
     <div class="row">
-      <div id="quote" class="text">
-        <p><i>"Simplicity is the outcome of technical subtlety. It is the goal, not the starting point."</i> - Maurice Saatchi</p>
+      <div class="text subtext">
+        <p><i>"Simplicity is the outcome of technical subtlety. It is the goal, not the starting point."</i><br/><br/> - Maurice Saatchi -</p><br/>
       </div>
     </div>
 
-    <div class="row row-center">
-      <div id="aboutText" class="text">
+    <div class="row">
+      <div class="text subtext">
         <p>As an experienced content writer and translator who mostly worked in the technical field, simplicity has always been my motto for making the clients understand sometimes tricky manipulations or concepts. As I'm now back to school at 39 to learn web development with BeCode Ghent, I'll keep that quote in mind as I'm specializing in front-end. I will be available for an internship from September 2019.</p>
       </div>
     </div>
 
-    <div class="row row-cv">
+    <div class="row" id="downloadCV">
        <a target="_blank" href="http://emilie.watlock.be/CV_Emilie.pdf" class="btn"><i class="fa fa-download"></i>  Download CV</a>
     </div>
 
@@ -126,37 +129,44 @@
       <div id="education">
 
         <div class="col col-sm-3 titleCV">
-          <span class="prepend"><h3 style="color:#F06000"><strong>//&nbsp;</strong></h3></span>
-          <span class="append"><h3><strong>Education</strong></h3></span>
+          <span class="inline" id="prepend">
+          	<h3><strong>//&nbsp;</strong></h3>
+          </span>
+          <span class="inline">
+          	<h3><strong>Education</strong></h3>
+          </span>
         </div>
-        <div class="col col-sm-9 description">
-          <div class="row title"><h3>Training in Web Development (ongoing)</h3>
+        <div class="col col-sm-8 description">
+          <div class="row title">
+          	<h4>Training in Web Development (ongoing)</h4>
           </div>
-          <div class="row years"><p><i>BeCode, Ghent (Belgium)</i> - 2019</p>
-          </div>
-          <div class="row details"><p>Intensive 7-month training based on the Simplon method. It covers front-end and back-end over 5 months, followed by 2 months of specialization.</p>
-          </div>
-        </div>
-
-      <div class="col col-sm-3 titleCV">
-      </div>
-        <div class="col col-sm-9 description">
-          <div class="row title"><h3>Master in Translation and International Relations</h3>
-          </div>
-          <div class="row years"><p><i>ISTI, Brussels (Belgium)</i> - 2005</p>
-          </div>
-          <div class="row details"><p>Translation curriculum focusing on European and International institutions. I worked on two projects: a research and translation thesis about corruption in the US institutions, and a research work about the importance of the French language within the organization "Canadian Parents for French".</p>
+          <div class="row text">
+          	<p><i>BeCode, Ghent (Belgium)</i> - 2019</p>
+          	<p>Intensive 7-month training based on the Simplon method. It covers front-end and back-end over 5 months, followed by 2 months of specialization.</p>
           </div>
         </div>
 
       <div class="col col-sm-3 titleCV">
       </div>
-        <div class="col col-sm-9 description">
-          <div class="row title"><h3>Bachelor in English and American Studies</h3>
+        <div class="col col-sm-8">
+          <div class="row title">
+          	<h4>Master in Translation and International Relations</h4>
           </div>
-          <div class="row years"><p><i>Paris X University, Nanterre (France)</i> - 2002</p>
+          <div class="row text">
+          	<p><i>ISTI, Brussels (Belgium)</i> - 2005</p>
+          	<p>Translation curriculum focusing on European and International institutions. I worked on two projects: a research and translation thesis about corruption in the US institutions, and a research work about the importance of the French language within the organization "Canadian Parents for French".</p>
           </div>
-          <div class="row details"><p>I majored in American literature and history.</p>
+        </div>
+
+      <div class="col col-sm-3 titleCV">
+      </div>
+        <div class="col col-sm-8">
+          <div class="row title">
+          	<h4>Bachelor in English and American Studies</h4>
+          </div>
+          <div class="row text">
+          	<p><i>Paris X University, Nanterre (France)</i> - 2002</p>
+          	<p>I majored in American literature and history.</p>
           </div>
         </div>
 
@@ -164,61 +174,70 @@
     </div><!-- End of row -->
 
     <!-- Experience -->
-    <div class="row">
-      <div id="experience">
-        
+    <div class="row" id="experience">
+
+        <!-- End of experience-->
         <div class="col col-sm-3 titleCV">
-          <span class="prepend"><h3 style="color:#F06000"><strong>//&nbsp;</strong></h3></span>
-          <span class="append"><h3><strong>Experience</strong></h3></span>
+          <span class="inline" id="prepend">
+          	<h3><strong>//&nbsp;</strong></h3>
+          </span>
+          <span class="inline">
+          	<h3><strong>Experience</strong></h3>
+          </span>
         </div>
-        <div class="col col-sm-9 description">
-          <div class="row title"><h3>Content Writer</h3>
+        <div class="col col-sm-7">
+          <div class="row title">
+          	<h4>Content Writer</h4>
           </div>
-          <div class="row years"><p><i>6 years of experience</i></p>
-          </div>
-          <div class="row details">
-            <p>Technical documentation (user manuals, quick guides, safety instructions), user-oriented materials (recipe books, educational leaflets for at-home training), newsletter (FR and ENG), proofreading.
+          <div class="row text"><p><i>6 years of experience</i></p>
+          	<p>In French: technical documentation (user manuals, quick guides, safety instructions), user-oriented materials (recipe books, educational leaflets for at-home training). In French and English: communication correspondence, website, newsletter, proofreading.
           </div>
         </div>
 
-      <div class="col col-sm-3 titleCV">
+      <div class="col col-sm-3">
       </div>
-        <div class="col col-sm-9 description">
-          <div class="row title"><h3> Translator</h3>
+        <div class="col col-sm-7">
+          <div class="row title">
+          	<h4> Translator</h4>
           </div>
-          <div class="row years"><p><i>13 year of experience</i></p>
-          </div>
-          <div class="row details"><p>Translation and proofreading of technical documentation specialized in airport and civil engineering, and in computer science. Legal translation (contrats and HR documents). General translation (communication, website, brochures, letters...). Creation and management of a terminology database.</p>
+          <div class="row text">
+          	<p><i>13 year of experience</i></p>
+          	<p>Translation and proofreading of technical documentation specialized in airport and civil engineering, and in computer science. Legal translation (contrats and HR documents). General translation (communication, website, brochures, letters...). Creation and management of a terminology database.</p>
           </div>
         </div>
 
-      <div class="col col-sm-3 titleCV">
+      <div class="col col-sm-3">
       </div>
-        <div class="col col-sm-9 description">
-          <div class="row title"><h3>French Teacher</h3>
+        <div class="col col-sm-7">
+          <div class="row title">
+          	<h4>French Teacher</h4>
           </div>
-          <div class="row years"><p><i>2 years of experience</i></p>
-          </div>
-          <div class="row details"><p>(In the UK) Teaching French to high school students and preparing them for the GCSE and A-Level exams. Animating the French Club and organizing language-related events (EuropeanDay of Languages, film screenings, etc.). </p>
+          <div class="row text">
+          	<p><i>2 years of experience</i></p>
+          	<p>(In the UK) Teaching French to high school students and preparing them for the GCSE and A-Level exams. Animating the French Club and organizing language-related events (EuropeanDay of Languages, film screenings, etc.).</p>
           </div>
         </div>
-
-      </div><!-- End of experience -->
-    </div><!-- End of row -->
+    </div><!-- End of experience-->
 
     <!-- Skills-->
-    <div class="row" id="rowSkills">
+    <div class="row">
       <div id="skills">
 
         <div class="col col-sm-3 titleCV">
-          <span class="prepend"><h3 style="color:#F06000"><strong>//&nbsp;</strong></h3></span>
-          <span class="append"><h3><strong>Skills</strong></h3></span>
+          <span class="inline" id="prepend">
+          	<h3><strong>//&nbsp;</strong></h3>
+          </span>
+          <span class="inline">
+          	<h3><strong>Skills</strong></h3>
+          </span>
         </div>
-        <div class="col col-sm-9 description">
-            <div class="row title"><h3>Web Development</h3>
+
+        <div class="col col-sm-7">
+          <div class="row title">
+          	<h4>Web Development</h4>
           </div>
 
-          <div class="row details">
+          <div class="row skillSpace">
             <div class="col col-sm-6">
               <p>HTML</p>
               <div class="containerSkill">
@@ -231,9 +250,9 @@
                 <div class="skill css">80%</div>
               </div>
             </div>
-        </div>
+          </div>
 
-          <div class="row details">
+          <div class="row skillSpace">
             <div class="col col-sm-6">
               <p>JAVASCRIPT</p>
               <div class="containerSkill">
@@ -248,7 +267,7 @@
             </div>
         </div>
 
-          <div class="row details">
+          <div class="row skillSpace">
             <div class="col col-sm-6">
               <p>GIT</p>
               <div class="containerSkill">
@@ -261,12 +280,14 @@
       </div><!-- End of web development skills -->
 
        <div class="col col-sm-3 titleCV">
-        </div>
-        <div class="col col-sm-9 description">
-            <div class="row title"><h3>Applications</h3>
+       </div>
+
+       <div class="col col-sm-7">
+          <div class="row title">
+            <h4>Applications</h4>
           </div>
 
-          <div class="row details">
+          <div class="row skillSpace">
             <div class="col col-sm-6">
               <p>MS OFFICE</p>
               <div class="containerSkill">
@@ -281,7 +302,7 @@
             </div>
         </div>
 
-          <div class="row details">
+          <div class="row skillSpace">
             <div class="col col-sm-6">
               <p>ADOBE INDESIGN</p>
               <div class="containerSkill">
@@ -296,7 +317,7 @@
             </div>
         </div>
 
-          <div class="row details">
+          <div class="row skillSpace">
             <div class="col col-sm-6">
               <p>SONY VEGAS STUDIO</p>
               <div class="containerSkill">
@@ -310,15 +331,18 @@
               </div>
             </div>
           </div>
+
       </div><!-- End of app skills -->
 
        <div class="col col-sm-3 titleCV">
-        </div>
-        <div class="col col-sm-9 description">
-            <div class="row title"><h3>Languages</h3>
+       </div>
+
+        <div class="col col-sm-7">
+          <div class="row title">
+            <h4>Languages</h4>
           </div>
 
-          <div class="row details">
+          <div class="row skillSpace">
             <div class="col col-sm-6">
               <p>FRENCH</p>
               <div class="containerSkill">
@@ -333,7 +357,7 @@
             </div>
         </div>
 
-          <div class="row details">
+          <div class="row skillSpace">
             <div class="col col-sm-6">
               <p>SPANISH</p>
               <div class="containerSkill">
@@ -346,24 +370,24 @@
                 <div class="skill dutch">40%</div>
               </div>
             </div>
-        </div>
-      </div><!-- End of language skills -->
+        	</div>
+      	</div><!-- End of language skills -->
 
-
-</div><!-- End of all skills -->
-
-    </div><!-- End of row -->   
+	 </div><!-- End of all skills -->
+  	</div><!-- End of row -->   
 
   </section>
 
   <section class="container" id="portfolio">
 
     <div class="row">
-      <div id="titlePortfolio">
-        <h3><strong>My BeCode Portfolio</strong></h3>
-        <p>Click on the picture to open the website</p>
-      </div>
-    </div>
+
+    	<div class="title">
+			<h3 class="title">MY BECODE PORTFOLIO</h3><br/>
+		</div>
+		<div class="subtext">
+        	<p>Click on the picture to open the page</p><br/><br/>
+        </div>
 
     <!-- Carousel -->
     <div class="container--head">
@@ -434,7 +458,7 @@
               <img src="img/start.jpg" alt="image5" style="width:100%">
             </a>
             <div class="carousel-caption">
-              <h3>Start Kit</h3> Oral presentation.
+              <h3>Starter Kit</h3> Oral presentation.
             </div>
           </div>
           <div class="item">
@@ -510,10 +534,60 @@
         <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
           <span class="glyphicon glyphicon-chevron-right"></span>
         </a>
-      </div>
-    </div>
-      <!-- End of carousel -->
+
+    </div><!-- End of carousel -->
       
+    </div><!-- End of row -->
+  </div><!-- End of section -->
+
+  </section>
+
+  <section class="container" id="contact">
+
+	<div class="row title">
+       <h3>CONTACT ME</h3><br/>
+    </div>
+
+	<div class="row">
+
+      <div class="col col-sm-6">
+      	<div class="contactDetails">
+      		<div class="row" id="contactTitle">
+      			<h4><b>Get in touch</b></h4><br/>
+      		</div>
+      		<div class="row text">
+      			<p><b>Address: </b>Maaltebruggestraat 66, 9000 Gent (Belgium)</p>
+      			<p><b>Email: </b>mesureur.e@gmail.com</p>
+      			<p><b>Phone: </b>+32 (0)472 74 44 62</p>
+      			<p><b>Website: </b>http://emiliemesureur.html</p>
+      		</div>
+      	</div>
+      </div>
+
+      <div class="col col-sm-6">
+
+      	<div class="contactDetails">
+
+            <form method="post" data-form-title="CONTACT US">
+              <input type="hidden" data-form-email="true">
+              <div class="form-group">
+                <input type="text" class="form-control" name="name" required="" placeholder="Name*" data-form-field="Name">
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" name="email" required="" placeholder="Email*" data-form-field="Email">
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" placeholder="Message" rows="7" data-form-field="Message"></textarea>
+              </div>
+              <div>
+                <button type="submit" id="send" class="btn btn-lg btn-danger">Submit</button>
+              </div>
+            </form>
+
+        </div>
+
+    </div><!-- End of form column -->
+
     </div><!-- End of row -->
 
   </section>

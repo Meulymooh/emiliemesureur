@@ -1,14 +1,74 @@
+/* GENERAL */
+
 html, body {
     height:100%;
     scroll-behavior: smooth;
-} 
+}
+
+/* Blocks */
 
 .row {
 	width: 100%;
 	margin: 0 auto;
 }
 
-/* Navbar */
+.container {
+	padding-top: 6%;
+	padding-bottom: 6%;
+}
+
+/* Fonts */
+
+#introduction h1 {
+	font: 4em 'opensans-bold', sans-serif;
+	text-shadow: 0px 1px 3px black;
+	font-weight: bolder;
+	color: white;
+}
+
+#introduction h2 {
+	font: 1.5em 'opensans-bold', sans-serif;
+	text-shadow: 0px 1px 2px black;
+	font-weight: bolder;
+}
+
+.title h3 {
+	font: 1.5em 'opensans-bold', sans-serif;
+	color: #e3872d; /* Orange */
+	text-align: center;
+	padding-top: 2%;
+	padding-bottom: 3%;
+	font-weight: bolder;
+}
+
+#titleCV h3 {
+	font: 1.5em 'opensans-bold', sans-serif;
+}
+
+.title h4 {
+	font: 1.3em 'opensans-bold', sans-serif;
+	color: black;
+	font-weight: bold;
+	padding-top: 2%;
+}
+
+.text p {
+	font: 1.1em 'opensans-bold', sans-serif;
+	color: grey;
+	padding-bottom: 1%;
+	line-height: 1.4em;
+}
+
+.subtext p {
+	font: 1.1em 'opensans-bold', sans-serif;
+	text-align: center;	
+	margin: auto;
+	width: 45%;
+	color: white;
+	line-height: 1.2em;
+}
+
+/* NAVBAR */
 
 .opaque-navbar {
     background-color: rgba(0,0,0,0.0);
@@ -54,19 +114,11 @@ ul.dropdown-menu {
 
 /* Intro */
 
-#introduction-text h1 {
-	font: 4.5em 'opensans-bold', sans-serif;f;
-	text-shadow: 0px 1px 3px black;
-}
-
-#introduction-text h3 {
-	font: 1.5em 'opensans-bold', sans-serif;
-	text-shadow: 0px 1px 2px black;
-}
-
-#home {
+#introduction {
+	padding-top: 18%;	
 	position: relative;
 	width: 100%;
+	height: 100%;
 	height: 890px;
 	background-image: url(img/laptop2.jpg);
 	background-position: center center;
@@ -76,13 +128,7 @@ ul.dropdown-menu {
 	-webkit-background-size: cover !important;
 	background-color:#464646;
 	overflow: hidden;
-}
-
-#introduction-text {
-	padding-top: 12%;
 	text-align: center;
-  	width: 100%;
-  	height: 100%;
   	color: white;
 }
 
@@ -135,14 +181,13 @@ hr {
 
 #about {
 	width: 100%;
-	background-color: #0d0d26; /* Dark mauve */
+	background-color: #232b3a; /* Navy */
 	position: relative;
 }
 
 /* Profile pic */
 
 #picture {
-	padding-top: 6%;
 	text-align: center;
 }
 
@@ -155,47 +200,13 @@ hr {
 	border: 3px solid #f5f5f0;
 }
 
-/* Title */
-
-#title {
-	text-align: center;
-	padding-top: 2%;
-	color: #F06000; /* Orange */
-}
-
-#title h3 {
-	font: 1.5em 'opensans-bold', sans-serif;
-}
-
-/* Quote */
-
-#quote {
-	padding-top: 2%;
-	padding-bottom: 2%;
-	text-align: center;	
-	margin: auto;
-	width: 35%;
-}
-
-/* Text */
-
-#aboutText {
-	text-align: center;	
-	margin: auto;
-	width: 35%;
-	padding-bottom: 2%;
-}
-
-.text p {
-	font: 1.1em 'opensans-bold', sans-serif;
-	color: white;
-}
-
-/* Download CV */
+/* CV button */
 
 .btn {
    background: #737373;
    color: white;
+   padding-top: 2%;
+   padding-bottom: 3%;
 }
 
 .btn:hover {
@@ -207,12 +218,14 @@ hr {
    font-size: 20px;
 }
 
-.row-cv {
+#downloadCV {
+	padding-top: 2%;
 	text-align: center;
-	padding-bottom: 6%;
 }
 
 /* RESUME */
+
+/* Education / Experience */
 
 #resume {
 	width: 100%;
@@ -220,7 +233,6 @@ hr {
 }
 
 #education {
-	padding-top: 6%;
 	padding-left: 10%;
 }
 
@@ -228,37 +240,12 @@ hr {
 	color: black; /* Dark mauve */
 }
 
-#titleCV h3 {
-	font: 1.5em 'opensans-bold', sans-serif;
-}
-
-.prepend {
-	display: inline-block;
-}
-
-.append {
-	display: inline-block;
-}
-
-.years p {
-	font: 1.1em 'opensans-bold', sans-serif;
-	color: #666666;
-	display: inline-block;
+#prepend {
+	color: #e3872d;
 }
 
 .inline {
 	display: inline-block;
-}
-
-.details p {
-	font: 1.1em 'opensans-bold', sans-serif;
-	color: #666666;
-}
-
-.details {
-	padding-right: 20%;
-	padding-top: 5px;
-	padding-bottom: 10px;
 }
 
 #experience {
@@ -268,9 +255,6 @@ hr {
 
 #skills {
 	padding-left: 10%;
-}
-
-.rowSkills {
 	padding-bottom: 6%;
 }
 
@@ -278,14 +262,14 @@ hr {
 
 * {box-sizing:border-box}
 
-.containerSkill {
-  width: 100%; 
-  background-color: #ddd; /* Grey */
-  height: 30px;
+.skillSpace {
+	padding-bottom: 2%;
 }
 
-#rowSkills {
-	padding-bottom: 6%;
+.containerSkill {
+  width: 100%; 
+  height: 30px;
+  background-color: #ddd; /* Grey */
 }
 
 .skill {
@@ -311,31 +295,19 @@ hr {
 .spanish {width: 70%; background-color: #FF4136 ;}
 .dutch {width: 40%; background-color: #FF4136 ;}
 
-/* Carousel */
-
-#titlePortfolio {
-	padding-top: 6%;
-	padding-bottom: 3%;
-	color: #F06000; /* Orange */
-	text-align: center;
-}
-
-#titlePortfolio p {
-	font: 1.1em 'opensans-bold', sans-serif;
-	color: white;
-}
+/* PORTFOLIO */
 
 #portfolio {
 	width: 100%;
-	background-color: #0d0d26; /* Dark mauve */
-	padding-top: 2%;
-	padding-bottom: 3%;
+	background-color: #232b3a; /* Navy */
 }
+
+/* Carousel */
 
 .container--head {
 	width: 50%;
-	max-height: 20%;
 	margin: 0 auto;
+	border: 1px solid grey;
 }
 
 .carousel-caption {
@@ -349,4 +321,35 @@ hr {
 
 .carousel-caption p {
 	font: 1.1em;
+}
+
+/* CONTACT */
+
+/* Contact details */
+
+#contactTitle {
+	padding-top: -10px;
+}
+
+.contactDetails{
+	padding-left: 10%;
+}
+
+
+/* Form */
+
+.form-control {
+	font: 1.1em 'opensans-bold', sans-serif;	
+}
+
+#send {
+    color: #fff;
+    background-color: #e3872d;
+    border-color: #fff;
+}
+
+#send:hover, #send:focus, #send:active, #send.active, .open>.dropdown-toggle.send {
+    color: #e3872d;
+    background-color: #fff;
+    border-color: #e3872d;
 }
