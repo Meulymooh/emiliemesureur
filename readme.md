@@ -1,6 +1,8 @@
 # Emilie Mesureur
 
-Link: http://emilie.watlock.be/mywebsite/index.php
+Link: http://emilie.watlock.be/mywebsite/index.php 
+
+(HTML code checked on https://validator.w3.org/)
 
 ## What is it?
 
