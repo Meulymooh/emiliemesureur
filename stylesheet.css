@@ -37,8 +37,8 @@ html, body {
 	font: 1.5em 'opensans-bold', sans-serif;
 	color: #e3872d; /* Orange */
 	text-align: center;
-	padding-top: 2%;
-	padding-bottom: 3%;
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
 	font-weight: bolder;
 }
 
@@ -66,39 +66,72 @@ html, body {
 	width: 45%;
 	color: white;
 	line-height: 1.2em;
+	padding-top: 30px !important;
 }
 
 /* NAVBAR */
 
-.opaque-navbar {
-    background-color: rgba(0,0,0,0);
-  /* Transparent = rgba(0,0,0,0) / Translucent = (0,0,0,0.5)  */
-    height: 60px;
-    border-bottom: 0px;
-    transition: background-color .5s ease 0s;
+.navbar { 
+	background-color: #1a1a1a; 
+	border: none; 
 }
 
-.opaque-navbar.opaque {
-    background-color: black;
-    height: 60px;
-    transition: background-color .5s ease 0s;
+.navbar-right li a { 
+	color: #e5e5e5; 
+	font-family: 'opensans-bold', sans-serif; 
+	font-size: 18px; 
+	float: none;
+    display: inline-block;
 }
 
-ul.dropdown-menu {
-    background-color: black;
+ul.navbar-right li a:hover { 
+	color: #e5e5e5; 
+	text-decoration: none; 
+	background-color: transparent; 
 }
 
-
-@media (max-width: 992px) {
-  body
-  {
-    background:transparent;
-  }
-  .opaque-navbar {
-    height: 60px;
-    transition: background-color .5s ease 0s;
+ul.navbar-right li a:visited { 
+	color: #e5e5e5; 
+	text-decoration: none; 
 }
 
+ul.navbar-brand a:hover { 
+	color: #e3872d !important; 
+	text-decoration: none; 
+	background-color: transparent; 
+}
+
+ul.navbar-brand a:visited { 
+	color: #e3872d !important; 
+	text-decoration: none; 
+}
+
+.navbar { 
+	background-color: transparent; 
+	border: none; 
+	transition: 0.8s; 
+}
+
+.nav-scrolled { 
+	background-color: #1a1a1a; 
+	transition: 0.8s; 
+}
+
+.navbar-right li a { 
+	letter-spacing: 3px; 
+}
+
+.navbar-brand {
+	color: #e3872d !important; /* Orange */
+	font-family: 'opensans-bold', sans-serif !important; 
+	font-size: 20px !important; 
+}
+
+.navbar-toggle .icon-bar {
+  background-color: #fff; /* Changes regular toggle color */
+}
+.navbar-toggle .icon-bar:hover {
+  background-color: #fff; /* Changes toggle color on hover */
 }
 
 /* HEADER */
@@ -170,7 +203,7 @@ hr {
 
 #about {
 	width: 100%;
-	background-color: #232b3a; /* Navy */
+	background-color: #383e4f; /* Navy */
 	position: relative;
 }
 
@@ -178,6 +211,7 @@ hr {
 
 #picture {
 	text-align: center;
+	padding-bottom: 3%;
 }
 
 
@@ -229,7 +263,7 @@ hr {
 	color: black; /* Dark mauve */
 }
 
-#prepend {
+.prepend {
 	color: #e3872d;
 }
 
@@ -251,44 +285,52 @@ hr {
 
 * {box-sizing:border-box}
 
-.skillSpace {
-	padding-bottom: 2%;
+.progress {
+	height: 30px !important;
+	background-color: grey; 
 }
 
-.containerSkill {
+.progress-bar {
   width: 100%; 
-  height: 30px;
-  background-color: #ddd; /* Grey */
+  height: 30px !important;
 }
 
 .skill {
+height: 30px !important;
   text-align: right;
-  padding: 10px;
   color: white;
-  height: 30px;
+  padding-right: 10px;
+  margin: auto;
+  padding-top: 7px;
 }
 
-.html {width: 90%; background-color: #3D9970;} 
-.css {width: 90%; background-color: #3D9970;}
-.javascript {width: 50%; background-color: #3D9970;}
-.php {width: 50%; background-color: #3D9970;}
-.git {width: 50%; background-color: #3D9970;}
-.office {width: 90%; background-color: #7FDBFF;} 
-.google {width: 90%; background-color: #7FDBFF;}
-.indesign {width: 90%; background-color: #7FDBFF;}
-.illustrator {width: 60%; background-color: #7FDBFF;}
-.vegas {width: 80%; background-color: #7FDBFF;}
-.premiere {width: 70%; background-color: #7FDBFF;}
-.french {width: 100%; background-color: #FF4136 ;}
-.english {width: 95%; background-color: #FF4136 ;}
-.spanish {width: 70%; background-color: #FF4136 ;}
-.dutch {width: 40%; background-color: #FF4136 ;}
+.dev {
+	background-color: #935529 !important;
+}
+
+.app {
+	background-color: #E08119 !important;
+}
+
+.lang {
+	background-color: #264E36 !important;
+}
 
 /* PORTFOLIO */
 
 #portfolio {
 	width: 100%;
-	background-color: #232b3a; /* Navy */
+	background-color: #383e4f; /* Navy */
+}
+
+.subtext-2 p {
+	font: 1.1em 'opensans-bold', sans-serif;
+	text-align: center;	
+	margin: auto;
+	width: 45%;
+	color: white;
+	line-height: 1.2em;
+	padding-top: 10px !important;
 }
 
 /* Carousel */

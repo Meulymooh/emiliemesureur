@@ -1,44 +1,37 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {//Check it is comming from a form
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 	//mysql credentials
-	$mysql_host = "sql107.byethost.com";
-	$mysql_username = "b11_23999695";
+	$admin_email = "mesureur.e@gmail.com";
+	$mysql_host = "localhost";
+	$mysql_username = "deb100889_emilie";
 	$mysql_password = "sweetie2009";
-	$mysql_database = "b11_23999695_emiliemesureur";
+	$mysql_database = "deb100889_emilie";
 	
 	$u_name = filter_var($_POST["user_name"], FILTER_SANITIZE_STRING); //set PHP variables like this so we can use them anywhere in code below
 	$u_email = filter_var($_POST["user_email"], FILTER_SANITIZE_EMAIL);
 	$u_text = filter_var($_POST["user_text"], FILTER_SANITIZE_STRING);
 
-	if (empty($u_name)){
-		die("Please enter your name");
-	}
-	if (empty($u_email) || !filter_var($u_email, FILTER_VALIDATE_EMAIL)){
-		die("Please enter valid email address");
-	}
-		
-	if (empty($u_text)){
-		die("Please enter text");
-	}	
-
 	//Open a new connection to the MySQL server
-	//see https://www.sanwebe.com/2013/03/basic-php-mysqli-usage for more info
 	$mysqli = new mysqli($mysql_host, $mysql_username, $mysql_password, $mysql_database);
 	
 	//Output any connection error
 	if ($mysqli->connect_error) {
-		die('Error : ('. $mysqli->connect_errno .') '. $mysqli->connect_error);
+		// die('Error : ('. $mysqli->connect_errno .') '. $mysqli->connect_error);
+		die("error connecting");
 	}	
-	
+
 	$statement = $mysqli->prepare("INSERT INTO users_data (user_name, user_email, user_message) VALUES(?, ?, ?)"); //prepare sql insert query
 	//bind parameters for markers, where (s = string, i = integer, d = double,  b = blob)
 	$statement->bind_param('sss', $u_name, $u_email, $u_text); //bind values and execute insert query
-	
+
 	if($statement->execute()){
-		print "Hello " . $u_name . "!, your message has been saved!";
+		print "Your message has been sent. <a href='index.php'>Back to the page</a>.";
+		//send email
+  		mail($admin_email, "You have received a message from:" . $u_name);
 	}else{
-		print $mysqli->error; //show mysql error if any
+		print "error executing statement";
+		// print $mysqli->error; 
 	}
 }
 ?>

@@ -6,22 +6,17 @@
 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-	<!--Ajax--> 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<!--My CSS--> 	
 	<link href="stylesheet.css" rel="stylesheet" type="text/css">
-  	<!-- Bootstrap CSS -->
-  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-  	<!-- jQuery -->
-  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  	<!-- Compiled plugins -->
-  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 	<!--Fonts-->
-  	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-  	<!-- Fontawesome -->
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <!-- Fontawesome -->
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <!-- Skillbar animation -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css" rel="stylesheet">
 	<!--Other-->
 	<title>Emilie Mesureur</title>
 
@@ -29,39 +24,34 @@
 
 <body>
 
+<!-- Navbar -->
+<nav class="navbar navbar-fixed-top" id="nav">
+    <div class="container">
+        <div class="navbar-header">
+            <!-- Mobile Hamburger -->
+            <button type="button" class="navbar-toggle navbar-light" id="nav-icon" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><b>- EM -</b></a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <!-- Navigation Links -->
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
 <section id="home">
-  <!-- Navbar -->
-
-<div class="navbar navbar-inverse navbar-fixed-top opaque-navbar">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navMain">
-  <span class="glyphicon glyphicon-chevron-right" style="color:white;"></span>
-    
-  </button>
-      <a class="navbar-brand" href="index.html">EMILIE MESUREUR</a>
-    </div>
-    <div class="collapse navbar-collapse" id="navMain">
-      <ul class="nav navbar-nav pull-right">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-</div>
-
-
-
-    
-
-  <!-- Introduction -->
-
  
-
-
+   <!-- Introduction -->
 
       <h1>Emilie Mesureur</h1><br/>
       <h2>FRONT-END DEVELOPER | CONTENT WRITER</h2>
@@ -128,12 +118,12 @@
       <div id="education">
 
         <div class="col col-sm-3 titleCV">
-          <span class="inline" id="prepend">
+          <div class="inline prepend">
           	<h3><strong>//&nbsp;</strong></h3>
-          </span>
-          <span class="inline">
+          </div>
+          <div class="inline">
           	<h3><strong>Education</strong></h3>
-          </span>
+          </div>
         </div>
         <div class="col col-sm-8 description">
           <div class="row title">
@@ -177,12 +167,12 @@
 
         <!-- End of experience-->
         <div class="col col-sm-3 titleCV">
-          <span class="inline" id="prepend">
+          <div class="inline prepend">
           	<h3><strong>//&nbsp;</strong></h3>
-          </span>
-          <span class="inline">
+          </div>
+          <div class="inline">
           	<h3><strong>Experience</strong></h3>
-          </span>
+          </div>
         </div>
         <div class="col col-sm-7">
           <div class="row title">
@@ -223,12 +213,12 @@
       <div id="skills">
 
         <div class="col col-sm-3 titleCV">
-          <span class="inline" id="prepend">
+          <div class="inline prepend">
           	<h3><strong>//&nbsp;</strong></h3>
-          </span>
-          <span class="inline">
+          </div>
+          <div class="inline">
           	<h3><strong>Skills</strong></h3>
-          </span>
+          </div>
         </div>
 
         <div class="col col-sm-7">
@@ -236,44 +226,60 @@
           	<h4>Web Development</h4>
           </div>
 
-          <div class="row skillSpace">
+          <div class="row">
             <div class="col col-sm-6">
-              <p>HTML</p>
-              <div class="containerSkill">
-                <div class="skill html">90%</div>
+              <div class="skill-name">HTML</div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped dev" role="progressbar" data-width="90">
+                  <div class="skill"><p><b>90%</b></p></div>
+                </div>
               </div>
             </div>
             <div class="col col-sm-6">
-              <p>CSS</p>
-              <div class="containerSkill">
-                <div class="skill css">80%</div>
+              <div class="skill-name">CSS</div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped dev" role="progressbar" data-width="70">
+                  <div class="skill"><p><b>70%</b></p></div>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="row skillSpace">
+          <div class="row">
             <div class="col col-sm-6">
-              <p>JAVASCRIPT</p>
-              <div class="containerSkill">
-                <div class="skill javascript">50%</div>
+              <div class="skill-name">JAVASCRIPT</div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped dev" role="progressbar" data-width="50">
+                  <div class="skill"><p><b>50%</b></p></div>
+                </div>
               </div>
             </div>
             <div class="col col-sm-6">
-              <p>PHP</p>
-              <div class="containerSkill">
-                <div class="skill php">50%</div>
+              <div class="skill-name">PHP</div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped dev" role="progressbar" data-width="60">
+                  <div class="skill"><p><b>60%</b></p></div>
+                </div>
               </div>
             </div>
         </div>
 
-          <div class="row skillSpace">
+          <div class="row">
             <div class="col col-sm-6">
-              <p>GIT</p>
-              <div class="containerSkill">
-                <div class="skill git">60%</div>
+              <div class="skill-name">MySQL</div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped dev" role="progressbar" data-width="60">
+                  <div class="skill"><p><b>60%</b></p></div>
+                </div>
               </div>
             </div>
             <div class="col col-sm-6">
+              <div class="skill-name">GIT</div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped dev" role="progressbar" data-width="60">
+                  <div class="skill"><p><b>60%</b></p></div>
+                </div>
+              </div>
             </div>
         </div>
       </div><!-- End of web development skills -->
@@ -286,47 +292,59 @@
             <h4>Applications</h4>
           </div>
 
-          <div class="row skillSpace">
+          <div class="row">
             <div class="col col-sm-6">
-              <p>MS OFFICE</p>
-              <div class="containerSkill">
-                <div class="skill office">90%</div>
+              <div class="skill-name">MS OFFICE</div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped app" role="progressbar" data-width="90">
+                  <div class="skill"><p><b>90%</b></p></div>
+                </div>
               </div>
             </div>
             <div class="col col-sm-6">
-              <p>GOOGLE APPS</p>
-              <div class="containerSkill">
-                <div class="skill google">90%</div>
-              </div>
-            </div>
-        </div>
-
-          <div class="row skillSpace">
-            <div class="col col-sm-6">
-              <p>ADOBE INDESIGN</p>
-              <div class="containerSkill">
-                <div class="skill indesign">90%</div>
-              </div>
-            </div>
-            <div class="col col-sm-6">
-              <p>ADOBE ILLUSTRATOR</p>
-              <div class="containerSkill">
-                <div class="skill illustrator">60%</div>
+              <div class="skill-name">GOOGLE APPS</div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped app" role="progressbar" data-width="90">
+                  <div class="skill"><p><b>90%</b></p></div>
+                </div>
               </div>
             </div>
         </div>
 
-          <div class="row skillSpace">
+          <div class="row">
             <div class="col col-sm-6">
-              <p>SONY VEGAS STUDIO</p>
-              <div class="containerSkill">
-                <div class="skill vegas">80%</div>
+              <div class="skill-name">ADOBE INDESIGN</div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped app" role="progressbar" data-width="90">
+                  <div class="skill"><p><b>90%</b></p></div>
+                </div>
               </div>
             </div>
             <div class="col col-sm-6">
-              <p>ADOBE PREMIERE</p>
-              <div class="containerSkill">
-                <div class="skill premiere">70%</div>
+              <div class="skill-name">ADOBE ILLUSTRATOR</div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped app" role="progressbar" data-width="60">
+                  <div class="skill"><p><b>60%</b></p></div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+          <div class="row">
+            <div class="col col-sm-6">
+              <div class="skill-name">SONY VEGAS STUDIO</div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped app" role="progressbar" data-width="80">
+                  <div class="skill"><p><b>80%</b></p></div>
+                </div>
+              </div>
+            </div>
+            <div class="col col-sm-6">
+              <div class="skill-name">ADOBE PREMIERE</div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped app" role="progressbar" data-width="60">
+                  <div class="skill"><p><b>60%</b></p></div>
+                </div>
               </div>
             </div>
           </div>
@@ -341,32 +359,40 @@
             <h4>Languages</h4>
           </div>
 
-          <div class="row skillSpace">
+          <div class="row">
             <div class="col col-sm-6">
-              <p>FRENCH</p>
-              <div class="containerSkill">
-                <div class="skill french">100%</div>
+              <div class="skill-name">FRENCH</div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped lang" role="progressbar" data-width="100">
+                  <div class="skill"><p><b>100%</b></p></div>
+                </div>
               </div>
             </div>
             <div class="col col-sm-6">
-              <p>ENGLISH</p>
-              <div class="containerSkill">
-                <div class="skill english">95%</div>
+              <div class="skill-name">ENGLISH</div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped lang" role="progressbar" data-width="95">
+                  <div class="skill"><p><b>95%</b></p></div>
+                </div>
               </div>
             </div>
         </div>
 
-          <div class="row skillSpace">
+          <div class="row">
             <div class="col col-sm-6">
-              <p>SPANISH</p>
-              <div class="containerSkill">
-                <div class="skill spanish">70%</div>
+              <div class="skill-name">SPANISH</div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped lang" role="progressbar" data-width="70">
+                  <div class="skill"><p><b>70%</b></p></div>
+                </div>
               </div>
             </div>
             <div class="col col-sm-6">
-              <p>DUTCH</p>
-              <div class="containerSkill">
-                <div class="skill dutch">40%</div>
+              <div class="skill-name">DUTCH</div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped lang" role="progressbar" data-width="40">
+                  <div class="skill"><p><b>40%</b></p></div>
+                </div>
               </div>
             </div>
         	</div>
@@ -384,7 +410,7 @@
     	<div class="title">
 			<h3 class="title">MY BECODE PORTFOLIO</h3><br/>
 		</div>
-		<div class="subtext">
+		<div class="subtext-2">
         	<p>Click on the picture to open the page</p><br/><br/>
         </div>
 
@@ -548,8 +574,9 @@
     </div>
 
 	<div class="row">
-
-      <div class="col col-sm-6">
+      <div class="col col-sm-2">
+      </div>
+      <div class="col col-sm-4">
       	<div class="contactDetails">
       		<div class="row" id="contactTitle">
       			<h4><b>Contact details</b></h4><br/>
@@ -563,7 +590,7 @@
       	</div>
       </div>
 
-      <div class="col col-sm-6">
+      <div class="col col-sm-4">
 
       	<div class="contactDetails">
 
@@ -586,6 +613,9 @@
         </div>
 
     </div><!-- End of form column -->
+
+    <div class="col col-sm-2">
+    </div>
 
     </div><!-- End of row -->
 
@@ -616,48 +646,16 @@
   	</div>
   </footer>
 
-
-
-
-<script>
-
-  //Navbar
-
-  $(window).scroll(function() {
-    if($(this).scrollTop() > 50)  /*height in pixels when the navbar becomes non opaque*/ 
-    {
-        $('.opaque-navbar').addClass('opaque');
-    } else {
-        $('.opaque-navbar').removeClass('opaque');
-    }
-});
-
-  // Carousel
-
-  $(function() {
-    $('.tooltip-carousel').popover();
-
-    $('#carousel-example-generic').on('slide.bs.carousel', function() {
-      $('.tooltip-carousel').popover('hide');
-      $(this).find('.caraousel-tooltip-item.active').fadeOut(function() {
-        $(this).removeClass('active');
-      });
-    });
-
-    $('#carousel-example-generic').on('slid.bs.carousel', function() {
-      var index = $(this).find('.carousel-inner > .item.active').index();
-      $(this).find('.caraousel-tooltip-item').eq(index).fadeIn(function() {
-        $(this).addClass('active');
-      });
-    });
-
-    $('.tooltip-carousel').mouseenter(function() {
-      $(this).popover('show');
-    }).mouseleave(function() {
-      $(this).popover('hide');
-    });
-  });
-</script>
+  <!--Jquery--> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Bootsrap -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  <!-- Navbar -->
+  <script src="js/navbar.js"></script>
+  <!-- Skillbars -->
+  <script src="js/progressbar.js"></script>
+  <!-- Carousel -->
+  <script src="js/carousel.js"></script>
 
 
 </body>
