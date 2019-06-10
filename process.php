@@ -11,7 +11,10 @@ $comment = mysqli_real_escape_string($con, $_POST['comment']);
 $commentclean = filter_var($comment, FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH);
 
 //insert into database
-mysqli_query($con,"INSERT INTO users_data (user_name, user_email, user_title, user_message) VALUES('nameclean', $emailclean','$subjectclean','$commentclean')");
+if (!mysqli_query($con,"INSERT INTO deb100889_emilie.contact_messages (id, name, email, subject, comments, con_date) VALUES('NULL', '$nameclean', '$emailclean','$subjectclean','$commentclean', 'CURRENT_TIMESTAMP')"))
+{
+	print('error executing mysql query');
+}
 
 //email the form to yourself
 $to ='mesureur.e@gmail.com';
