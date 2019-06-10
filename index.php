@@ -19,7 +19,6 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css" rel="stylesheet">
 	<!--Other-->
 	<title>Emilie Mesureur</title>
-
 </head>
 
 <body>
@@ -34,7 +33,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html"><b>- EM -</b></a>
+            <a class="navbar-brand" href="index.html"><b>EM</b></a>
         </div>
         <div class="navbar-collapse collapse">
             <!-- Navigation Links -->
@@ -573,12 +572,12 @@
        <h3>CONTACT ME</h3><br/>
     </div>
 
-	<div class="row">
+	<div class="row ">
       <div class="col col-sm-2">
       </div>
       <div class="col col-sm-4">
-      	<div class="contactDetails">
-      		<div class="row" id="contactTitle">
+      	<div id="contactDetails" class="subContact">
+      		<div class="row">
       			<h4><b>Contact details</b></h4><br/>
       		</div>
       		<div class="row text">
@@ -592,27 +591,32 @@
 
       <div class="col col-sm-4">
 
-      	<div class="contactDetails">
+      	<div class="subContact" id="contactForm">
 
-            <form action="process.php" method="post" data-form-title="CONTACT US">
-              <input type="hidden" data-form-email="true">
-              <div class="form-group">
-                <input type="text" class="form-control" id="userName-info" name="user_name" required="" placeholder="Name*" data-form-field="Name">
-              </div>
-              <div class="form-group">
-                <input type="email" class="form-control" id="userEmail-info" name="user_email" required="" placeholder="Email*" data-form-field="Email">
-              </div>
-              <div class="form-group">
-                <textarea class="form-control" id="userMessage-info" name="user_text" placeholder="Message" rows="7" data-form-field="Message"></textarea>
-              </div>
-              <div>
-                <button type="submit" id="send" class="btn btn-lg btn-danger">Submit</button>
-              </div>
-            </form>
+          <div class="form-group">
+            <input type="text" class="form-control" id="name" placeholder="Name*">
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control" id="email" placeholder="Email*">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" id="subject" placeholder="Subject*">
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" id="comment" placeholder="Message*"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="spam" class="spam"><p>Spam Control 5 + 2 = ?</p></label>
+            <input id="spam" class="form-control" type="tel" placeholder="Type 7 here">
+          </div>
+          <div>
+            <button type="submit" id="submit" class="btn btn-warning">Submit</button>
+          </div>
+          <div id="display"></div>
 
         </div>
 
-    </div><!-- End of form column -->
+      </div><!-- End of form column -->
 
     <div class="col col-sm-2">
     </div>
@@ -656,7 +660,8 @@
   <script src="js/progressbar.js"></script>
   <!-- Carousel -->
   <script src="js/carousel.js"></script>
-
+  <!-- Contact -->
+  <script src="js/contact.js"></script>
 
 </body>
 </html>

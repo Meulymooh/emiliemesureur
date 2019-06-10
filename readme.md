@@ -28,6 +28,7 @@ Bootstrap, fontawesome, javascript, PHP/MySQL (contact form)
 
 * Making the navbar transparent over the first section.
 * Finding a good script for the animated skillbars. I tried waypoints ("appear on view" plugin) but I didn't manage to make it work. In the end, a short jquery script does the job in a neat way.
+* Combining bootstrap form, Ajax, PHP, mySQL and php.mail() altogether for the contact form.
 
 ## Room for improvement
 

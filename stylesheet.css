@@ -59,6 +59,12 @@ html, body {
 	line-height: 1.4em;
 }
 
+.spam p {
+	font: 1em 'opensans-bold', sans-serif;
+	color: red;
+	line-height: 1.2em;
+}
+
 .subtext p {
 	font: 1.1em 'opensans-bold', sans-serif;
 	text-align: center;	
@@ -353,11 +359,15 @@ height: 30px !important;
 
 /* Contact details */
 
-#contactTitle {
-	padding-top: -10px;
+.subContact {
+	padding-top: 5%;
 }
 
-.contactDetails{
+#contactDetails {
+	padding-left: 10%;
+}
+
+#contactForm {
 	padding-left: 10%;
 }
 
@@ -367,13 +377,17 @@ height: 30px !important;
 	font: 1.1em 'opensans-bold', sans-serif;	
 }
 
-#send {
+ #display {
+	margin-top: 15px !important;
+}
+
+#submit {
     color: #fff;
     background-color: #e3872d;
     border-color: #fff;
 }
 
-#send:hover, #send:focus, #send:active, #send.active, .open>.dropdown-toggle.send {
+#submit:hover, #submit:focus, #submit:active, #submit.active, .open>.dropdown-toggle.submit {
     color: #e3872d;
     background-color: #fff;
     border-color: #e3872d;
