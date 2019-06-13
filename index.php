@@ -433,12 +433,13 @@
           <li data-target="#carousel-example-generic" data-slide-to="11"></li>
           <li data-target="#carousel-example-generic" data-slide-to="12"></li>
           <li data-target="#carousel-example-generic" data-slide-to="13"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="14"></li>
         </ol>
 
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
           <div class="item active">
-            <a href="https://meulymooh.github.io/VCard/index.html" target="_blank">
+            <a href="https://meulymooh.github.io/VCard/index.html" target="_blank" alt="vCard">
               <img src="img/vcard.jpg" alt="image0" style="width:100%">
             </a>
             <div class="carousel-caption">
@@ -447,7 +448,7 @@
           </div>
           <div class="item">
             <a href="https://meulymooh.github.io/404-page/index.html" target="_blank">
-              <img src="img/deadend.jpg" alt="image1" style="width:100%">
+              <img src="img/deadend.jpg" alt="Error 404" style="width:100%">
             </a>
             <div class="carousel-caption">
               <h3>Error 404</h3> HTML semantics, CSS positioning.
@@ -455,7 +456,7 @@
           </div>
           <div class="item">
             <a href="https://meulymooh.github.io/My-CV/index.html" target="_blank">
-              <img src="img/luggage.jpg" alt="image2" style="width:100%">
+              <img src="img/luggage.jpg" alt="My CV" style="width:100%">
             </a>
             <div class="carousel-caption">
               <h3>My CV</h3> Grids, bootstrap, layout.
@@ -463,7 +464,7 @@
           </div>
           <div class="item">
             <a href="https://meulymooh.github.io/Frameworking-FTW/index.html" target="_blank">
-              <img src="img/layout.jpg" alt="image3" style="width:100%">
+              <img src="img/layout.jpg" alt="Layout" style="width:100%">
             </a>
             <div class="carousel-caption">
               <h3>Layout</h3> Frameworks.
@@ -471,7 +472,7 @@
           </div>
           <div class="item">
             <a href="https://meulymooh.github.io/suzanne-collins/index.html" target="_blank">
-              <img src="img/redline.jpg" alt="image4" style="width:100%">
+              <img src="img/redline.jpg" alt="Suzanne Collins" style="width:100%">
             </a>
             <div class="carousel-caption">
               <h3>Red Line Project</h3> Redesigning a website.
@@ -479,7 +480,7 @@
           </div>
           <div class="item">
             <a href="https://drive.google.com/file/d/1_RwQ7mwWhzxL8pP_4QeQ1mdY-5DSOcfL/view" target="_blank">
-              <img src="img/start.jpg" alt="image5" style="width:100%">
+              <img src="img/start.jpg" alt="Web Developer's Starter Kit" style="width:100%">
             </a>
             <div class="carousel-caption">
               <h3>Starter Kit</h3> Oral presentation.
@@ -487,7 +488,7 @@
           </div>
           <div class="item">
             <a href="https://anton90.github.io/Main-MarioLuigi/main.html" target="_blank">
-              <img src="img/group.jpg" alt="image6" style="width:100%">
+              <img src="img/group.jpg" alt="Single Page Website" style="width:100%">
             </a>
             <div class="carousel-caption">
               <h3>One-Page Website</h3> Group project.
@@ -495,7 +496,7 @@
           </div>
           <div class="item">
             <a href="https://meulymooh.github.io/nyan/index.html" target="_blank">
-              <img src="img/cat.jpg" alt="image7" style="width:100%">
+              <img src="img/cat.jpg" alt="Nyan Cat" style="width:100%">
             </a>
             <div class="carousel-caption">
               <h3>Nyan Cat</h3> Starting with Javascript.
@@ -503,23 +504,23 @@
           </div>
           <div class="item">
             <a href="https://meulymooh.github.io/serious-business/index.html" target="_blank">
-              <img src="img/business.jpg" alt="image8" style="width:100%">
+              <img src="img/business.jpg" alt="Opening and Closing Hours" style="width:100%">
             </a>
             <div class="carousel-caption">
               <h3>Serious Business</h3> Javascript "if" statements.
             </div>
           </div>
           <div class="item">
-            <a href="https://meulymooh.github.io/nyan/index.html" target="_blank">
-              <img src="img/tools.jpg" alt="image9" style="width:100%">
+            <a href="https://meulymooh.github.io/starting-javascript/index.html" target="_blank">
+              <img src="img/tools.jpg" alt="DOM Manipulation" style="width:100%">
             </a>
             <div class="carousel-caption">
               <h3>Fix Me!</h3> DOM manipulation.
             </div>
           </div>
           <div class="item">
-            <a href="https://meulymooh.github.io/serious-business/index.html" target="_blank">
-              <img src="img/shopping.jpg" alt="image10" style="width:100%">
+            <a href="https://meulymooh.github.io/JS-Final-Test-2/index.html" target="_blank">
+              <img src="img/shopping.jpg" alt="Shopping List" style="width:100%">
             </a>
             <div class="carousel-caption">
               <h3>The Shopping List</h3> Javascript level assessment.
@@ -527,7 +528,7 @@
           </div>
           <div class="item">
             <a href="https://meulymooh.github.io/dynamic-loading/index.html" target="_blank">
-              <img src="img/jenga.jpg" alt="image11" style="width:100%">
+              <img src="img/jenga.jpg" alt="Dynamic Loading - Ajax" style="width:100%">
             </a>
             <div class="carousel-caption">
               <h3>Dynamic Loading</h3> Learning Ajax.
@@ -535,7 +536,7 @@
           </div>
           <div class="item">
             <a href="https://drive.google.com/file/d/15afRLm9p8eElEqmCbmPEhIxPemLb1Bm-/view" target="_blank">
-              <img src="img/hacker.jpg" alt="image12" style="width:100%">
+              <img src="img/hacker.jpg" alt="Cross-Site Scripting (XSS)" style="width:100%">
             </a>
             <div class="carousel-caption">
               <h3>Cross-Site Scripting</h3> Oral presentation.
@@ -543,10 +544,18 @@
           </div>
           <div class="item">
             <a href="https://meulymooh.github.io/pokedex/index.html" target="_blank">
-              <img src="img/pokemon.jpg" alt="image13" style="width:100%">
+              <img src="img/pokemon.jpg" alt="Pokedex" style="width:100%">
             </a>
             <div class="carousel-caption">
               <h3>Pokedex</h3> Talking to external API.
+            </div>
+          </div>
+          <div class="item">
+            <a href="https://meulymooh.github.io/api-surfing-spots/index.html" target="_blank">
+              <img src="img/surf.jpg" alt="Fetch and API" style="width:100%">
+            </a>
+            <div class="carousel-caption">
+              <h3>Surfing Spots</h3> Fetch and API.
             </div>
           </div>
         </div>
